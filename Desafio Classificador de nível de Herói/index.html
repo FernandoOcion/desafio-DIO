@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classificador de Nível de Herói</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Classificador de Nível de Herói</h1>
+        <div class="hero-info">
+            <label for="hero-name">Nome do Herói:</label>
+            <input class="hero-input" type="text" id="hero-name" placeholder="Fernando Ocion">
+            <label for="hero-xp">XP do Herói:</label>
+            <input class="hero-input" type="number" id="hero-xp" placeholder="1.000.000">
+            <button id="classify-button">Classificar</button>
+        </div>
+        <div class="result">
+            <p id="result-message"></p>
+            <img id="result-img">
+        </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
