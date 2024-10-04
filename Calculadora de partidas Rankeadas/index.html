@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+<title>Calculadora de Rankeadas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <h1>Calculadora de Rankeadas</h1>
+    <label for="vitorias">Vitórias:</label>
+    <input type="number" id="vitorias" min="0">
+    <label for="derrotas">Derrotas:</label>
+    <input type="number" id="derrotas" min="0">
+    <button onclick="calcularRank()">Calcular Rank</button>
+    <div id="resultado"></div>
+    <img id="elo-img">
+</div>
+<script src="script.js"></script>
+</body>
+</html>
