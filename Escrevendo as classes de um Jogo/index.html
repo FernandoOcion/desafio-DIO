@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herói da Aventura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crie seu Herói</h1>
+        <div class="hero-info">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite o nome do herói">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" placeholder="Digite a idade do herói">
+            <label for="tipo">Tipo:</label>
+            <select id="tipo">
+                <option value="guerreiro">Guerreiro</option>
+                <option value="mago">Mago</option>
+                <option value="monge">Monge</option>
+                <option value="ninja">Ninja</option>
+            </select>
+        </div>
+        <div class="hero-image">
+            <img id="hero-img" src="./assets/background.png" alt="Imagem do Herói">
+        </div>
+        <button id="btn-atacar">Atacar!</button>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
