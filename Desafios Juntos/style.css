@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hero-winlvl, .hero-nameRank, .hero-nameRankAttack {
+    font-weight: bold;
+    color: #007bff;
+}
+
+img {
+    display: block;
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+#resultado, #result-message, #resultado-ataque {
+    margin-top: 10px;
+    font-size: 1.2em;
+}

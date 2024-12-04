@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heróis e Rankings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Rank de Herói</h1>
+
+        <!-- Seção do Código 1 -->
+        <section id="calculo-rank">
+            <h2>Calcular Rank por Vitórias/Derrotas</h2>
+            <label for="vitorias">Vitórias:</label>
+            <input type="number" id="vitorias" min="0">
+            <label for="derrotas">Derrotas:</label>
+            <input type="number" id="derrotas" min="0">
+            <button onclick="calcularRank()">Calcular</button>
+            <p id="resultado"></p>
+            <img id="elo-img" src="./assets/ferro.png" alt="Elo atual">
+        </section>
+
+        <!-- Seção do Código 2 -->
+        <section id="classificacao-hero">
+            <h2>Classificar Herói por XP</h2>
+            <label for="hero-name">Nome do Herói:</label>
+            <input type="text" id="hero-name">
+            <label for="hero-xp">XP do Herói:</label>
+            <input type="number" id="hero-xp" min="0">
+            <button id="classify-button">Classificar</button>
+            <p id="result-message"></p>
+            <img id="result-img" src="./assets/ferro.png" alt="Rank atual">
+        </section>
+
+        <!-- Seção do Código 3 -->
+        <section id="ataque-hero">
+            <h2>Ataque do Herói</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" min="0">
+            <label for="tipo">Tipo de Herói:</label>
+            <select id="tipo">
+                <option value="mago">Mago</option>
+                <option value="guerreiro">Guerreiro</option>
+                <option value="monge">Monge</option>
+                <option value="ninja">Ninja</option>
+            </select>
+            <button id="btn-atacar">Atacar</button>
+            <p id="resultado-ataque"></p>
+            <img id="hero-img" src="./assets/mago.png" alt="Herói atual">
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
